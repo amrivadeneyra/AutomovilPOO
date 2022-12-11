@@ -5,17 +5,17 @@ public class EjemploAutomovil {
 
         Automovil subaru = new Automovil("Subaru", "Impreza");
         Date fecha = new Date();
-        subaru.setColor("Blanco");
+        subaru.setColor(Color.BLANCO);
         subaru.setCilindrada(2.0);
 
 
-        Automovil mazda = new Automovil("Mazda", "Mazda", "Rojo", 3.0);
+        Automovil mazda = new Automovil("Mazda", "Mazda", Color.ROJO, 3.0);
 
         System.out.println("mazda.leerFabricante() = " + mazda.getFabricante());
 
-        Automovil nissan = new Automovil("Nissan", "Navara", "Gris oscuro", 3.5, 50);
+        Automovil nissan = new Automovil("Nissan", "Navara", Color.GRIS, 3.5, 50);
 
-        Automovil nissan2 = new Automovil("Nissan", "Navara", "Gris oscuro", 3.5, 50);
+        Automovil nissan2 = new Automovil("Nissan", "Navara", Color.GRIS, 3.5, 50);
 
         Automovil auto = new Automovil();
         System.out.println("son iguales? " + (nissan == nissan2));
@@ -26,8 +26,8 @@ public class EjemploAutomovil {
         System.out.println(nissan.verDetalle());
 
         System.out.println("fecha: " + auto.equals(fecha));
-        System.out.println("nissan : "+nissan);
-        System.out.println("nissan : "+nissan.toString());
+        System.out.println("nissan : " + nissan);
+        System.out.println("nissan : " + nissan.toString());
 
         System.out.println(auto.equals(nissan));
 
